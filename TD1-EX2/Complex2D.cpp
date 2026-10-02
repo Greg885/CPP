@@ -67,3 +67,8 @@ bool Complex2D::operator>(const Complex2D& autre) const {
     double autreModuleCarre = (autre.reel * autre.reel) + (autre.imaginaire * autre.imaginaire);
     return monModuleCarre > autreModuleCarre;
 }
+
+void Complex2D::afficher() const {
+    std::cout << reel << (imaginaire < 0 ? " - " : " + ")
+              << (imaginaire < 0 ? -imaginaire : imaginaire) << "i";
+}

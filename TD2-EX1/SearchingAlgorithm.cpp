@@ -16,9 +16,9 @@ void SearchingAlgorithm::displaySearchResults(std::ostream& os, int results, int
 
     os << "Recherche de la cible " << target << " : ";
     if (results != -1) {
-        os << "Trouvée à l'indice " << results;
+        os << "Trouvee a l'indice " << results;
     } else {
-        os << "Non trouvée";
+        os << "Non trouvee";
     }
     os << " (Comparaisons: " << numberComparisons << ")" << std::endl;
 }
